@@ -211,7 +211,7 @@
         <div class="right_col" role="main">
             <div class="x_panel">
                   <div class="x_title">
-                    <h2> Lixiviciacion </h2>
+                    <h2> Produccion </h2>
                     
                     <div class="clearfix"></div>
                   </div>
@@ -220,9 +220,10 @@
 
                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
                       <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Historial</a>
+                        <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Listar</a>
                         </li>
-                        <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Alta Analisis</a>
+                        <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Cargar</a>
+                        </li>
                         </li>
                       </ul>
                       <div id="myTabContent" class="tab-content">
@@ -231,7 +232,7 @@
         <!-- Tabla entradas y salidas -->
                 <div class="x_panel">
                   <div class="x_title">
-              <p> Registros de Analisis Lixiviciacion</p>
+              p> Registro de entradas y salidas de ADF's en Moldeo</p>
 
                     <div class="clearfix"></div>
                   </div>
@@ -405,7 +406,7 @@
              
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Alta Analisis Lixiviacion</h2>
+                    <h2>Produccion<small>Alta Produccion</small></h2>
                     
                     <div class="clearfix"></div>
                   </div>
@@ -413,26 +414,20 @@
                     <br />
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ensayo<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                       <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Produccion [kg]<span class="required">*</span></label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="0.0 kg">
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Proposito<span class="required">*</span>
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Arena Reutilizada [Kg]<span class="required">*</span> </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                        </div>
-                      </div>
+                      
+                       <div class="form-group">
+                       <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha<span class="required">*</span>       </label>
+                       <div class="col-md-9 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="DD/MM/AAAA">
+                         <span class="fa fa-calendar form-control-feedback left" aria-hidden="true"></span>                        </div>
+                    
+                       </div>
                       
                       
                       <div class="ln_solid"></div>
@@ -452,60 +447,46 @@
                         <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
                           <div class="">
             
+             
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Analisis Lixiviacion<small>registrar nuevo</small></h2>
+                    <h2>Residuos<small>proceso de Moldeo</small></h2>
                     
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left">
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Ensayo</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                          <input type="text" class="form-control" placeholder="Nombre">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Residuos Reutilizable [Kg]
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Residuos No Reutilizable [Kg]
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Proposito<span class="required">*</span>       </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                          <textarea class="form-control" rows="3" placeholder='ejemplo: Auditoria interna'></textarea>
-                        </div>
-                      </div>
-                       <div class="form-group">
-                       <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha<span class="required">*</span>       </label>
-                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="DD/MM/AAAA">
-                         <span class="fa fa-calendar form-control-feedback left" aria-hidden="true"></span>                        </div>
-                    
-                       </div>
-                       <div class="form-group">
-                       <label class="control-label col-md-3 col-sm-3 col-xs-12">Adjuntar<span class="required">*</span>       </label>
-                       <div class="col-md-9 col-sm-9 col-xs-12">
-                        <button type="button" class="btn btn-warning">Subir</button>
-                        </div>
-                    
-                       </div>
-
                       
                       
-
                       <div class="ln_solid"></div>
                       <div class="form-group">
-                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
-                          <button type="submit" class="btn btn-primary">Cancel</button>
-                          <button type="submit" class="btn btn-success">Submit</button>
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button type="submit" class="btn btn-primary">Cancelar</button>
+                          <button type="submit" class="btn btn-success">Confirmar</button>
                         </div>
                       </div>
 
                     </form>
                   </div>
                 </div>
-              
-                
+              </div>
                       </div>
                     </div>
 
